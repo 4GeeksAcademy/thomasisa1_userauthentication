@@ -10,7 +10,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Signup } from "./component/Signup"; 
 import { Login } from "./component/login";
-import { Private } from "./component/private";
+import { Private } from "/component/private";
 
 const Layout = () => {
     const basename = process.env.BASENAME || "";
