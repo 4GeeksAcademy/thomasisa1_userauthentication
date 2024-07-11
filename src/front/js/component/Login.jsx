@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Login = () => {
+const Login = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -18,8 +18,7 @@ export const Login = () => {
         });
 
         if (response.ok) {
-            const data = await response.json();
-            localStorage.setItem('token', data.access_token);
+            alert("Login successful");
             navigate("/private");
         } else {
             alert("Login failed");
@@ -53,3 +52,5 @@ export const Login = () => {
         </div>
     );
 };
+
+export default Login;
