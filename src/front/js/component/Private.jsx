@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../store/appContext";
-import token from "../../img/token.png"
 
 export const Private = () => {
 	const { store, actions } = useContext(Context);
@@ -44,7 +43,7 @@ export const Private = () => {
 								<span className="no-token">[Empty]</span>
 								:
 								<div className="token-img">
-									<img src={token} alt="Gold Token Coin" className="img-fluid"></img>
+									{/* <img src={token} alt="Gold Token Coin" className="img-fluid"></img> */}
 								</div>
 							}
 						</div>
@@ -62,7 +61,7 @@ export const Private = () => {
 								<span className="no-token">[Empty]</span>
 								:
 								<div className="token-img">
-									<img src={token} alt="Gold Token Coin" className="img-fluid"></img>
+									{/* <img src={token} alt="Gold Token Coin" className="img-fluid"></img> */}
 								</div>
 							}
 						</div>
@@ -98,7 +97,7 @@ export const Private = () => {
 								<span className="no-token">[Empty]</span>
 								:
 								<div className="token-img">
-									<img src={token} alt="Gold Token Coin" className="img-fluid"></img>
+									{/* <img src={token} alt="Gold Token Coin" className="img-fluid"></img> */}
 								</div>
 							}
 						</div>
