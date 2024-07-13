@@ -14,7 +14,7 @@ const Signup = () => {
             return;
         }
 
-        const response = await fetch('/api/signup', {
+        const response = await fetch( process.env.BACKEND_URL+'/api/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

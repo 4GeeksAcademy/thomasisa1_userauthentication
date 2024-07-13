@@ -1,3 +1,26 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+/* styles/index.css */
+body {
+    padding-top: 56px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.signup-container,
+.login-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.page-link2 {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.page-link2:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
