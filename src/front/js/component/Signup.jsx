@@ -14,7 +14,7 @@ const Signup = () => {
             return;
         }
 
-        const response = await fetch( process.env.BACKEND_URL+'/api/signup', {
+        const response = await fetch(process.env.BACKEND_URL + '/api/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -25,6 +25,13 @@ const Signup = () => {
         if (response.ok) {
             alert("Signup successful");
             navigate("/login");
+        } else if (response.status === 400) {
+            const data = await response.json();
+            if (data.msg === "User already exists") {
+                alert("This user already exists");
+            } else {
+                alert("Signup failed");
+            }
         } else {
             alert("Signup failed");
         }
